@@ -52,11 +52,10 @@ CloakBrowser 暴露的是 **Playwright 兼容 API**，已有 Playwright 代码�
 ├── 📚 references/
 │   └── test-targets.md                  ← 检测站点详解 + 基线
 └── 🧩 skills/
-    └── hermes/
-        └── stealth-browser-automation/   ← Hermes Agent skill 格式
-            ├── SKILL.md
-            ├── references/test-targets.md
-            └── scripts/probe.py
+    └── stealth-browser-automation/       ← Hermes Agent skill 格式
+        ├── SKILL.md
+        ├── references/test-targets.md
+        └── scripts/probe.py
 ```
 
 ### 🎮 快速上手
@@ -131,7 +130,7 @@ curl -s "https://ipinfo.io/$(curl -s https://api.ipify.org)/json" | jq .org
 
 | Agent | 用法 |
 |-------|------|
-| **Hermes Agent** | `cp -r skills/hermes/stealth-browser-automation ~/.skills/devops/` |
+| **Hermes Agent** | `cp -r skills/stealth-browser-automation ~/.skills/devops/` |
 | **Claude Code / Cursor / Aider** | 把 `PLAYBOOK.md` 喂给 agent，或 `cp PLAYBOOK.md .claude/stealth-browser.md` |
 | **真人** | 直接看 `PLAYBOOK.md`，跑 `scripts/probe.py` 验证 |
 
@@ -238,7 +237,7 @@ Check DOM for CF iframe
 
 | Agent | How |
 |-------|-----|
-| **Hermes Agent** | `cp -r skills/hermes/stealth-browser-automation ~/.skills/devops/` |
+| **Hermes Agent** | `cp -r skills/stealth-browser-automation ~/.skills/devops/` |
 | **Claude Code / Cursor / OpenCode / Aider** | Feed `PLAYBOOK.md` as context |
 | **Human** | Read `PLAYBOOK.md`, run `scripts/probe.py` |
 
